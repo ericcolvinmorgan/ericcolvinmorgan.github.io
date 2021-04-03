@@ -1,0 +1,9 @@
+---
+layout: page
+title: About
+permalink: /about/
+---
+
+Hello!  My name is Eric Morgan.  I'm a software developer and CPA.  I've worked between a couple of the Big 4 accounting firms for the past decade.  I’ve served in external client facing roles recommending and implementing technology based solutions to address client pain points and improve engagement efficiency, and in internal client facing roles doing everything from performing the role of a product owner to serving as a development lead of both on-shore and off-shore teams.
+
+This site is intended to be a place for me to express my thoughts and opinions, and to document personal projects.
