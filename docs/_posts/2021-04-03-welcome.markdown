@@ -2,7 +2,8 @@
 layout: post
 title:  "Welcome!"
 date:   2021-04-03 12:08:26 -0700
-categories: jekyll update
+categories: personal
+tags: cpa big4 software
 ---
 Hello!  My name is Eric Morgan.  I'm a software developer and CPA.  I've worked as a development resource for multiple Big 4 accounting firms.  I’ve served in internal client facing roles doing everything from serving as a development lead of both on-shore and off-shore teams to performing the role of a product owner, and in external client facing roles recommending and implementing technology based solutions to address client pain points and improve engagement efficiency.
 

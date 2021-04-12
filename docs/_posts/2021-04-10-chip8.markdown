@@ -1,0 +1,17 @@
+---
+layout: post
+title:  "CHIP-8 Interpreter"
+date:   2021-04-10 11:31:33 -0700
+categories: projects
+tags: emulation chip-8 c++ javascript wasm emscripten webassembly
+---
+Emulation has always been a topic I wanted to explore, so I recently started to work through a CHIP-8 Interpreter to start to dive into this topic.  This isn't so much of an emulation project as it is an interpreter project as CHIP-8 wasn't an actual chip, but an interpreted language originally created for the COSMAC VIP in the 1970s.  Nonetheless, it is often a recommended jump-off project for those interested in the world of emulation.
+
+My specific implementation is C++ based and utilizes SDL2 for graphics, audio output, and keyboard input.  While there is a desktop app included in the project, the majority of my development efforts were focused on the browser app.  This application was compiled to WebAssembly using Emscripten.  As part of this project I also wrote some machine code to create a custom title card ROM that's displayed when the user starts the web app.  Overall, this was a very enjoyable project.  There is a ton of detailed technical documentation online around the CHIP-8, so you are really able to focus on your specific implementation without spinning too much.  This definitely laid a great foundation to start moving toward emulating something a bit more in depth.  I may explore emulating the NES or GameBoy as one of my next projects.
+
+You can try out my CHIP-8 Interpreter [here](https://www.ericcolvinmorgan.com/Chip8Emulation/).
+
+The following sources were a great help in this project: \
+[CHIP-8 Wikipedia](https://en.wikipedia.org/wiki/CHIP-8) \
+[Write a CHIP-8 Emulator](https://tobiasvl.github.io/blog/write-a-chip-8-emulator/) \
+[Cowgod's Chip-8 Technical Reference](http://devernay.free.fr/hacks/chip8/C8TECH10.HTM)
