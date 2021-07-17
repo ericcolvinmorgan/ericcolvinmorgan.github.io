@@ -5,7 +5,7 @@ date:   2021-04-13 19:55:33 -0700
 categories: projects
 tags: python tesseract opencv poppler ocr
 ---
-This will be a series of postings with the end goal of extracting text from tax forms.  Today I'll be walking through the steps to install the necessary tools we will be using going forward.  The environment in which I will be working will be Windows 10 with WSL2 configured and running Ubuntu 20.04 (WSL installation instructions [here](https://docs.microsoft.com/en-us/windows/wsl/install-win10)).  It is possible to install all of the dependencies mentioned today directly in a Windows environment, but it will require a lot more setup; I strongly suggest embracing WSL.  It shouldn't take more than a couple hours to get everything up and running.
+This post details steps in setting up an environment used for extracting text from tax forms.  Today I'll be walking through the steps to install the necessary tools needed going forward.  The environment in which I will be working will be Windows 10 with WSL2 configured and running Ubuntu 20.04 (WSL installation instructions [here](https://docs.microsoft.com/en-us/windows/wsl/install-win10)).  It is possible to install all of the dependencies mentioned today directly in a Windows environment, but it will require a lot more setup; I strongly suggest embracing WSL.  It shouldn't take more than a couple hours to get everything up and running.
 
 We start by updating our package manager:
 ```
@@ -279,4 +279,4 @@ After Poppler has been successfully installed, you can activate your Python envi
 pip install python-poppler
 ```
 
-That's it!  You should now be good to go for each of the above libraries.  We'll dive into the code in upcoming posts.
+That's it!  You should now be good to go for each of the above libraries.
