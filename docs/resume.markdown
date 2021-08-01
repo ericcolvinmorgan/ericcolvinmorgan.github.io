@@ -23,9 +23,12 @@ June 2013 – August 2019
 ##### VARIOUS PROJECTS
 [Calculation Engine](https://github.com/ericcolvinmorgan/CalcEngine) – C# based service parses and extracts a calculation tree from an Excel file, and a C++ service (hosted as a custom runtime in an AWS layer) rebuilds the calculation from the tree and calculates against user provided CSV data inputs. **(C++, CMake, C#, AWS Lambda)**
 
+[Chip-8 Interpreter](https://www.ericcolvinmorgan.com/Chip8Emulation/) – Web-based Chip-8 interpreter.  Includes a custom “bootloader” written in Chip-8 bytecode. **(C++, JavaScript, Emscripten, WebAssembly)**
+
+[OpenGL Moon Simulation](https://www.ericcolvinmorgan.com/Chip8Emulation/) - Utilizes NASA sourced sensor data to produce a 3D rendering of the moon using OpenGL and GLSL.  Allows either a displacement or bump mapping approach to render moon geometry.  **(C++, GLSL, OpenGL)**
+
 [Text Extraction Portal](https://github.com/ericcolvinmorgan/TextExtraction) – Allows users to upload PDF or image files and extract text directly or via OCR.  Provides an interface to render extracted text over documents on a canvas element to highlight low confidence items. **(TypeScript, React, PostgreSQL, Python, Tesseract, AWS - Step Functions, Lambda, S3, RDS, SAM, API Gateway, CloudFormation)**
 
-[Chip-8 Interpreter](https://www.ericcolvinmorgan.com/Chip8Emulation/) – Web-based Chip-8 interpreter.  Includes a custom “bootloader” written in Chip-8 bytecode. **(C++, JavaScript, Emscripten, WebAssembly)**
 
 ##### EDUCATION AND CERTIFICATIONS
 **Oregon State University** - *Bachelor of Science – Computer Science*  
