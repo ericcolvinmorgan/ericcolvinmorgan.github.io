@@ -39,6 +39,8 @@ minima:
 
   skin: dark
 
+google_analytics: G-KQP3T0B0LT
+
 # Build settings
 # theme: minima
 remote_theme: jekyll/minima
