@@ -5,9 +5,16 @@ permalink: /resume/
 ---
 
 ##### WORK EXPERIENCE  
+**Bluecrew**, *Seattle, WA*  
+*Software Development Engineer*  
+October 2021 - Present
+  - Implemented new features, maintained, and managed releases of React Native-based Workplace iOS/Android 
+application. **(JavaScript/TypeScript, React Native)**
+  - Created microservice responsible for automating the approval of crew members shifts. **(JavaScript/TypeScript)**
+
 **Deloitte**, *National Practice - International Tax Quantitative Consulting Services (“IT.QCS”)*  
 *Development Lead*  
-September 2019 – Present  
+September 2019 – October 2021  
   -  Lead developer and architect of the Automated International Tax Disclosure Tool.  A cloud-based platform used by tax practitioners to expedite the preparation and review of required transaction reporting disclosures. **(C# REST API, JavaScript/TypeScript, React, SQL, Azure AD, Azure - Functions, Service Bus, App Service, Blob Storage)**
   -  Developed compliance integration tool utilizing an Excel VSTO add-in as the front-end.  Allowed users to import and stage data via a SQL LocalDB and edit via Excel.  Various report templates were stored and accessed via Azure blob storage. **(C#, VSTO, SQL, Azure AD, Azure Blob Storage)**
   -  Implemented Python-based service into client’s tax ERP system used to apply “look-through” rules.  Includes custom implementation of Tarjan’s algorithm to analyze and quickly group over 500k payments into related party payment groups to determine allowed allocations.  Further handles the application of circular MGI tiering rules. **(Python)**
@@ -18,7 +25,8 @@ September 2019 – Present
 June 2013 – August 2019  
   -  Managed and worked on-site with two offshore Agile teams supporting development efforts of International Tax Services ("ITS"). Worked closely with firm DevOps teams to complete Azure deployments.
   -  Led the development of a US tax reform web portal to process client eFile (i.e., XML) data to produce comparison visualizations in support of client tax reform discussions. **(C# REST API, D3, JavaScript, React, SQL, Redis Cache)**
-  -  Lead developer of the Earnings and Profits portal utilized across numerous engagements, including a $130B transaction undertaken by a Fortune 100 global telecommunications company. **(C# REST API, JavaScript, Angular2, SQL, Power BI, MongoDB, Azure AD, Azure Service Bus, Azure App Service)**  
+  -  Lead developer of the Earnings and Profits portal utilized across numerous engagements, including a $130B transaction undertaken by a Fortune 100 global telecommunications company. **(C# REST API, JavaScript, Angular2, SQL, Power BI, MongoDB, Azure AD, Azure Service Bus, Azure App Service)**
+  - Automated the mapping of client accounts to a standard chart of accounts using Naive Bayes classification significantly reducing the amount of manual effort by engagement team members. **(Python, Scikit)**  
 
 ##### VARIOUS PROJECTS
 [Calculation Engine](/projects/2021/05/09/calculationengine.html) – C# based service parses and extracts a calculation tree from an Excel file, and a C++ service (hosted as a custom runtime in an AWS layer) rebuilds the calculation from the tree and calculates against user provided CSV data inputs. **(C++, CMake, C#, AWS Lambda)**

@@ -4,6 +4,6 @@ title: About
 permalink: /about/
 ---
 
-Hello!  My name is Eric Morgan.  I'm a software developer and CPA.  I've worked as a development resource for multiple Big 4 accounting firms.  I’ve served in internal client facing roles doing everything from serving as a development lead of both on-shore and off-shore teams to performing the role of a product owner, and in external client facing roles recommending and implementing technology based solutions to address client pain points and improve engagement efficiency.
+Hello!  My name is Eric Morgan.  I'm a software developer and CPA.  I currently work at a gig-economy startup focused on connecting workers with companies looking for temporary help.  I've previously worked as a development resource for multiple Big 4 accounting firms.  I’ve served in internal client facing roles doing everything from serving as a development lead of both on-shore and off-shore teams to performing the role of a product owner, and in external client facing roles recommending and implementing technology based solutions to address client pain points and improve engagement efficiency.
 
 This site is intended to be a place for me to express my thoughts and opinions, and to document personal projects.
