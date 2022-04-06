@@ -40,7 +40,7 @@ June 2013 – August 2019
 
 ##### EDUCATION AND CERTIFICATIONS
 **Oregon State University** - *Bachelor of Science – Computer Science*  
-Current Student - 4.0 GPA
+Graduated 4.0 GPA
 
 **Southern Illinois University Carbondale** - *Bachelor of Science – Finance*  
 Graduated Cum Laude  
