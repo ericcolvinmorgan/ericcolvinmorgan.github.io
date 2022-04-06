@@ -1,0 +1,32 @@
+#background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+}
+
+#background:before,
+#background:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+#background:before {
+    background-color: rgba($dark, .5);
+    z-index: 2;
+}
+
+#background:after {
+    background-image: url("../../assets/images/site/background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
