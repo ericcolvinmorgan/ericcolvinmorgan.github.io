@@ -1,0 +1,283 @@
+@import "./base.scss";
+@import "./layout/background";
+@import "./layout/footer";
+@import "./layout/navigation";
+
+$width: calc(100vw - (#{$frame-margin} * 2));
+$height: calc(100vh - (#{$frame-margin} * 2));
+$height-mobile: calc(92vh - (#{$frame-margin} * 2));
+
+$animation-duration: 500ms;
+$pipeline-width: calc(#{$width} + #{$frame-gutter});
+$pipeline-height: calc(#{$height} + #{$frame-gutter});
+
+@mixin border-animation($keyframe, $position) {
+  animation-name: $keyframe;
+  animation-duration: $animation-duration;
+  animation-delay: $animation-duration * $position;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+@keyframes draw-horizontal {
+  from {
+    width: 0;
+  }
+  to {
+    width: $pipeline-width;
+  }
+}
+
+@keyframes draw-name-card-border {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes expand-name-card {
+  from {
+    max-height: 0;
+  }
+  to {
+    max-height: 300px;
+  }
+}
+
+@keyframes draw-vertical {
+  from {
+    height: 0;
+  }
+  to {
+    height: $pipeline-height;
+  }
+}
+
+@keyframes show-element {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+body {
+  background: $primary-color;
+  color: $white;
+  font-family: $font-family;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+// Start Frame
+.frame {
+  z-index: 10;
+  width: $width;
+  height: $height;
+  @media screen and (max-width: 600px) {
+    height: $height-mobile;
+  }
+
+  margin: $frame-margin;
+  position: relative;
+  top: 0;
+  left: 0;
+
+  &:before {
+    position: absolute;
+    width: 0;
+    opacity: 1;
+    height: $frame-gutter;
+    content: "";
+    background: $frame-gutter-color;
+    top: -$frame-gutter;
+    left: -$frame-gutter;
+    @media screen and (min-width: 600px) {
+      @include border-animation(draw-horizontal, 1);
+    }
+  }
+
+  &:after {
+    position: absolute;
+    width: $frame-gutter;
+    height: 0;
+    content: "";
+    background: $frame-gutter-color;
+    top: -$frame-gutter;
+    right: -$frame-gutter;
+    @media screen and (min-width: 600px) {
+      @include border-animation(draw-vertical, 2);
+    }
+  }
+
+  &-inner:after {
+    position: absolute;
+    width: 0;
+    height: $frame-gutter;
+    content: "";
+    background: $frame-gutter-color;
+    bottom: -$frame-gutter;
+    right: -$frame-gutter;
+    @media screen and (min-width: 600px) {
+      @include border-animation(draw-horizontal, 3);
+    }
+  }
+
+  &-inner:before {
+    position: absolute;
+    width: $frame-gutter;
+    height: 0;
+    content: "";
+    background: $frame-gutter-color;
+    bottom: -$frame-gutter;
+    left: -$frame-gutter;
+    @media screen and (min-width: 600px) {
+      @include border-animation(draw-vertical, 4);
+    }
+  }
+}
+// End Frame
+
+// Start Container
+.container {
+  z-index: 15;
+  width: $width;
+  height: $height;
+  @media screen and (max-width: 600px) {
+    height: $height-mobile;
+  }
+  margin: $frame-margin;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+// End Container
+
+// Start Splash Wrapper
+.splash-wrapper {
+  z-index: 15;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  top: 0;
+  left: 0;
+  min-height: $height;
+  width: 100%;
+
+  &:before {
+    content: "";
+    display: block;
+  }
+
+  &:after {
+    content: "";
+    display: block;
+  }
+}
+// End Splash Wrapper
+
+// Start Name Card
+.name-card {
+  position: relative;
+  display: block;
+  font-size: 1.5em;
+  @media screen and (max-width: 600px) {
+    font-size: 1.1em;
+  }
+
+  &:before {
+    display: block;
+    position: relative;
+    left: 0;
+    width: 0;
+    height: $frame-gutter;
+    content: "";
+    background: $frame-gutter-color;
+
+    @include border-animation(draw-name-card-border, 1);
+    @media screen and (min-width: 600px) {
+      @include border-animation(draw-name-card-border, 5);
+    }
+  }
+
+  &:after {
+    display: block;
+    position: relative;
+    left: 0;
+    width: 0;
+    height: $frame-gutter;
+    content: "";
+    background: $frame-gutter-color;
+    @include border-animation(draw-name-card-border, 1);
+    @media screen and (min-width: 600px) {
+      @include border-animation(draw-name-card-border, 5);
+    }
+  }
+
+  &-inner {
+    max-height: 0px;
+    overflow: hidden;
+    @include border-animation(expand-name-card, 2);
+    @media screen and (min-width: 600px) {
+      @include border-animation(expand-name-card, 6);
+    }
+  }
+}
+// End Name Card
+
+ul.social {
+  list-style: none;
+  padding-left: 0;
+
+  li {
+    display: inline-block;
+    padding: 0 1.5em 0 0;
+
+    &:last-child {
+      padding-right: 0;
+    }
+
+    .icon {
+      &:before {
+        font-size: 1.5em;
+      }
+
+      color: $white;
+      display: inline-block;
+      font-style: normal;
+      font-variant: normal;
+      text-rendering: auto;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+}
+
+// Extend Exisitng With Animations
+#navigation {
+  position: absolute;
+  top: -15px;
+  opacity: 0;
+  @include border-animation(show-element, 6);
+
+  @media screen and (max-width: 600px) {
+    @include border-animation(show-element, 3);
+  }
+}
+
+#background {
+  opacity: 0;
+  @include border-animation(show-element, 6);
+
+  @media screen and (max-width: 600px) {
+    @include border-animation(show-element, 3);
+  }
+}
