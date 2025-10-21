@@ -5,9 +5,19 @@ permalink: /resume/
 ---
 
 ##### WORK EXPERIENCE  
+**Microsoft**, *Redmond, WA*  
+*Software Development Engineer*  
+July 2022 - Present
+  - Successfully led the production readiness efforts for the Speech AI and Voice Intelligence Adaptation Management Service ("AMS"). Worked across multiple teams to ensure relevant threat modeling, data auditing, security readiness, and multiple other compliance related requirements had been successfully completed to ensure a successful launch.
+  - Led effort to reduce customer reported incidents (“CRIs”) for the Dataverse Data Movement Service team ("DMS") resulting in a reduction of CRIs by over 42% YoY.
+  - Served as engineering owner of the React-based front-end experience for the DMS team. Managed the localization and WCAG 2.1-compliant accessibility experience for the product, enabling product use globally and improving usability for customers with assistive technologies.
+  - Led adoption of TypeScript for the DMS front-end, which introduced typing, reducing runtime defects and accelerating feature development and onboarding.
+  - Performed retrospectives for security incidents and reported bug bounty findings to the Security Incident Prevention and Review team.
+  - Designed and developed multiple features across enterprise-level microservices comprising Power Platform using C#, JavaScript/TypeScript, gRPC, Azure and CosmosDB.
+
 **Bluecrew**, *Seattle, WA*  
 *Software Development Engineer*  
-October 2021 - Present
+October 2021 - July 2022
   - Implemented new features, maintained, and managed releases of React Native-based Workplace iOS/Android 
 application. **(JavaScript/TypeScript, React Native)**
   - Created microservice responsible for automating the approval of crew members shifts. **(JavaScript/TypeScript)**
