@@ -55,4 +55,4 @@ Graduated 4.0 GPA
 **Southern Illinois University Carbondale** - *Bachelor of Science – Finance*  
 Graduated Cum Laude  
 
-Certified Public Accountant – Licensed in Washington
+Certified Public Accountant – Licensed in Washington and Wisconsin, Registered in Illinois
